@@ -1,8 +1,10 @@
-import {Fundamentos} from './paginas/Fundamentos';
+import {Inicial} from './paginas/Inicial';
+
 
 export function App() {
   return (
-    <Fundamentos />
+    <Inicial />
+  
     
     
   )

@@ -1,5 +1,6 @@
 import estilos from './Fundamentos.module.css'
 import {Botao} from '../componentes/Botao'
+import { Contador } from '../componentes/Contador'
 
 export function Fundamentos(){
 
@@ -9,7 +10,7 @@ export function Fundamentos(){
         <div className={estilos.conteiner}>
             
             <p className={estilos.titulo}> Fundamentos</p>
-
+            <h1 className={estilos.text}>Props</h1>
             <div className={estilos.conteinerBotoes}>
                 <Botao 
                     titulo="Login"
@@ -44,6 +45,9 @@ export function Fundamentos(){
                     acao = {() => mensagem('Confirmandooo')}
                 />
             </div>
+
+            <p className={estilos.subtitulo}>Props</p>
+            <Contador />
 
 
             
