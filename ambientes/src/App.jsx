@@ -1,10 +1,11 @@
-import {Inicial} from './paginas/Inicial';
+//import {Inicial} from './paginas/Inicial';
+import { Login } from "./paginas/Login";
 
 
 export function App() {
   return (
-    <Inicial />
-  
+    //<Inicial />
+    <Login/>
     
     
   )

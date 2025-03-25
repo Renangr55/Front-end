@@ -15,7 +15,7 @@
 
 header{
     grid-area: cabecalho;
-    color: rgb(0, 238, 255);
+    
    
     
 
@@ -23,7 +23,7 @@ header{
 
 aside {
     grid-area: lateral;
-    color: tomato;
+    
   
     
 
@@ -32,7 +32,7 @@ aside {
 
 main {
     grid-area: principal;
-    color: violet;
+    
    
     
 
@@ -40,7 +40,7 @@ main {
 
 footer {
     grid-area: rodape;
-   color: deeppink;
+   color: rgb(255, 255, 255);
     
 
 }
