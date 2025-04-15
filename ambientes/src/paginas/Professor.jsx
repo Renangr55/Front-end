@@ -46,7 +46,7 @@ export function Professor() {
 
         return (
             <div className={estilos.conteiner}>
-                <p className={estilos.titulo}>Insira as informações</p>
+                <p className={estilos.titulo}>Insira as informações sobre os professores</p>
 
                 <form
                     onSubmit={handleSubmit(autenticarProfessor)}

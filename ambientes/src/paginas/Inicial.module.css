@@ -16,6 +16,7 @@
 header{
     grid-area: cabecalho;
     
+    
    
     
 
@@ -40,7 +41,7 @@ main {
 
 footer {
     grid-area: rodape;
-   color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
     
 
 }

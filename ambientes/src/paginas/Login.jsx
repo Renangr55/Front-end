@@ -2,21 +2,19 @@ import estilos from './Login.module.css'
 import {useForm} from 'react-hook-form'
 import {z} from 'zod'
 import {zodResolver} from '@hookform/resolvers/zod'
+import { useNavigate } from 'react-router'
+
+const loginSchema = z.object({
+    email: z.string().email({message:'informe um e-mail válido'}), 
+
+    senha: z.string().min(6, {message: 'defina uma senha de caracteres!'})
+})
 
 
 export function Login (){
 
-    const loginSchema = z.object({
-
-
-        email: z.string()
-            .email({message:'informe um e-mail válido'}), 
-
-        senha: z.string()
-            .min(6, {message: 'defina uma senha de caracteres!'})
-
-    })
-
+    const navegacao = useNavigate();
+    
     const {register,
         handleSubmit,
         formState: {errors
@@ -27,6 +25,8 @@ export function Login (){
     function autenticarUsuario (data) {
         console.log(data.email)
         console.log(data.senha)
+
+        navegacao('inicial')
     }
 
     return(

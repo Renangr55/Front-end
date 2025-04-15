@@ -4,6 +4,7 @@ import { HiAcademicCap } from "react-icons/hi2";
 import { FaBookBookmark } from "react-icons/fa6";
 import { AiFillEnvironment } from "react-icons/ai";
 import { PiStudentFill } from "react-icons/pi";
+import { Link } from 'react-router'
 
 export function Lateral(){
     return(
@@ -26,25 +27,34 @@ export function Lateral(){
             
             <section className={estilos.conteinerBotoes}>
 
-                <div className={estilos.botao}>
+                <Link 
+                    className={estilos.botao}
+                    to={'/professor'}
+                >
                     <HiAcademicCap className={estilos.icon} size={20} color={'rgb(0, 0, 0)'}/>
-                    Professor
-                </div>
+                    Professor 
+                </Link>
 
-                <div className={estilos.botao}>
+                <Link className={estilos.botao}
+                    to={'/disciplinar'}
+                >
                     <FaBookBookmark  className={estilos.icon} size={20} color={'rgb(0, 0, 0)'}/>
                     Disciplinas
-                </div>
+                </Link>
 
-                <div className={estilos.botao}>
+                <Link className={estilos.botao}
+                    to={'/inicial'}
+                >
                     <AiFillEnvironment className={estilos.icon} size={20} color={'rgb(0, 0, 0)'}/>
                     Ambientes
-                </div>
+                </Link>
                 
-                <div className={estilos.botao}>
+                <Link className={estilos.botao}
+                    to={'/Sala'}
+                >
                     <PiStudentFill className={estilos.icon} size={20} color='rgb(0, 0, 0)'/>
-                    Estudantes
-                </div>
+                    Sala
+                </Link>
 
             </section>
             
